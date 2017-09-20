@@ -18,19 +18,25 @@ header {
 
 .main_wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: left;
-}
-
-.main_wrapper>* {
-    flex: 1;
     padding: 1em;
-    justify-content: space-around;
 }
 
 .definitions {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.definitions>* {
+    padding: 1em;
+}
+
+.definitions div:first-child {
+    background-color: gray;
+    padding: 1em 0 2em 4em;
+    /* padding: top right bottom left */
 }
 
 
