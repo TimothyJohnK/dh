@@ -13,6 +13,7 @@ body {
 
 header {
     font-size: 2em;
+    text-align: center;
 }
 
 .main_wrapper {
@@ -25,6 +26,22 @@ header {
     flex: 1;
     padding: 1em;
     justify-content: space-around;
+}
+
+.definitions {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* shows how flex-order works; default is 0 so order: 1 is the first after all the default orders */
+
+.first {
+    order: 1;
+}
+
+.second {
+    order: 2;
 }
 
 
